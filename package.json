@@ -22,5 +22,5 @@
     "url": "https://github.com/ssakoda-wiccidu/simple-template/issues"
   },
   "homepage": "https://github.com/ssakoda-wiccidu/simple-template#readme",
-  "bin": "./index.js"
+  "bin": "./bin/cli.js"
 }
