@@ -1,0 +1,25 @@
+{
+  "name": "simple-template",
+  "version": "1.0.0",
+  "description": "create dirs/files from template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssakoda-wiccidu/simple-template.git"
+  },
+  "keywords": [
+    "npm",
+    "npx",
+    "template",
+    "nodejs"
+  ],
+  "author": "ssakoda-wiccidu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ssakoda-wiccidu/simple-template/issues"
+  },
+  "homepage": "https://github.com/ssakoda-wiccidu/simple-template#readme"
+}
