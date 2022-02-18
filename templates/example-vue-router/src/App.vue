@@ -1,9 +1,11 @@
 <template>
   <div>
-    <a href="#" @click="setPage('test-page01')">Test Page01</a>
-    <a href="#" @click="setPage('test-page02')">Test Page02</a>
+    <div>
+      <a href="#" @click="setPage('test-page01')">Test Page01</a>
+      <a href="#" @click="setPage('test-page02')">Test Page02</a>
+    </div>
+    <component :is="activePage"></component>
   </div>
-  <component :is="activePage"></component>
 </template>
 
 <script>
