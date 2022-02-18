@@ -1,0 +1,33 @@
+<html lang="ja">
+
+    <head>
+        <meta charset="utf-8">
+        </meta>
+        <title>vue test</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <div id="app" class="container">
+            <h1>
+                <button @click="purge">Purge</button>
+                My Todos <span class="info">{{remaing.length}}/{{todos.length}}</span></h1>
+            <ul>
+                <!-- v-if="!todos.length" v-for=... 一つのタグ内に,if/forがあるとv-forが先に評価されるためv-ifが機能しない-->
+                <li v-for="(todo, index) in todos">
+                    <input type="checkbox" v-model="todo.isDone">
+                    <span :class="{done: todo.isDone}">{{todo.title}}</span>
+                    <span @click="deleteItem(index)" class="command">[x]</span>
+                </li>
+                <li v-show="!todos.length">Nothing todo</li>
+            </ul>
+            <form @submit.prevent="addItem">
+                <input type="text" v-model="newItem">
+                <input type="submit" value="Add">
+            </form>
+        </div>
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
